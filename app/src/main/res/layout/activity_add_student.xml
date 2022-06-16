@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddStudentActivity">
+    <LinearLayout
+        android:background="@color/red"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center">
+        <TextView
+            android:textColor="#FFF"
+            android:textSize="23dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="160dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="Thêm sinh viên"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+
+            android:layout_gravity="center"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:src="@drawable/img"
+            app:civ_border_width="2dp"
+            app:civ_circle_background_color="@color/white"
+            app:civ_border_color="#FFF"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+
+            android:id="@+id/eStudentCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập mã sinh viên"
+            android:minHeight="48dp">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/eName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Nhập họ tên sinh viên"
+            android:minHeight="48dp">
+
+        </EditText>
+
+        <EditText
+            android:layout_marginBottom="20dp"
+            android:id="@+id/eDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Nhập ngày sinh"
+            android:minHeight="48dp">
+
+        </EditText>
+        <RadioGroup
+            android:weightSum="2"
+            android:id="@+id/radiogroup"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+
+                android:layout_weight="1"
+                android:text="Nam"
+                android:id="@+id/radiobtnNam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:layout_marginRight="30dp"/>
+            <RadioButton
+
+                android:layout_weight="1"
+                android:text="Nữ"
+                android:id="@+id/radiobtnNu"
+                android:textSize="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RadioGroup>
+        <LinearLayout
+            android:layout_margin="15dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:background="#0A7A0F"
+                android:layout_weight="1"
+                android:id="@+id/btnSave"
+                android:textColor="@color/white"
+                android:text="Lưu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"></Button>
+            <Button
+                android:textColor="@color/white"
+                android:background="#AF3942"
+                android:layout_weight="1"
+                android:id="@+id/btnCancel"
+                android:text="Hủy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></Button>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
